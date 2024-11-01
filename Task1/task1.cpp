@@ -31,7 +31,16 @@ void program() {
     const int SIZE = number;
     double arrNumber[SIZE] = {};
     for (int i = 0; i < SIZE; i++) {
-        arrNumber[i] = rand() % 10;
+        double element;
+        std::cout << "Введите " << i << " элемент первоначального массива: " << std::endl;
+        std::cin >> element;
+        while (std::cin.fail()){
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Введите значение повторно:";
+        std::cin >> element;
+    }
+        arrNumber[i] = element;
     }
 
     for (int i = 0; i < SIZE; i++) {
@@ -50,7 +59,16 @@ void program() {
     double arrNew[SIZE + STEP] = {};
 
     for (int i = 0; i < STEP; i++) {
-        arrNew[i] = rand() % 10;
+        double element2;
+        std::cout << "Введите новый элемент массива: " << std::endl;
+        std::cin >> element2;
+        while (std::cin.fail()){
+        std::cin.clear(); 
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Введите значение повторно:";
+        std::cin >> element2;
+    }
+        arrNew[i] = element2;
     }
     for (int i = 0; i < SIZE; i++) {
         arrNew[i + STEP] = arrNumber[i];
