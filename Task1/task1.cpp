@@ -1,6 +1,5 @@
 #include <iostream>
 #include <limits>
-#include <cstdlib> // для rand()
 
 int menu() {
     std::cout << "Выберите интересующий пункт меню: \n";
