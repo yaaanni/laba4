@@ -1,0 +1,4 @@
+/home/user/workaem/453501/ОАИП/LR4/Task2/build/CMakeFiles/MyTest.dir
+/home/user/workaem/453501/ОАИП/LR4/Task2/build/CMakeFiles/test.dir
+/home/user/workaem/453501/ОАИП/LR4/Task2/build/CMakeFiles/edit_cache.dir
+/home/user/workaem/453501/ОАИП/LR4/Task2/build/CMakeFiles/rebuild_cache.dir
